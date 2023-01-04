@@ -20,7 +20,9 @@ Key initialization relies primarily on the X3DH ( Asynchronous Key Exchange: eXt
 Once the communications initialization phase has been completed, Alice and Bob share a key
 SK which can be used to exchange messages.
 Note that in this project we will distinguish:
+
 • “text” type messages which will be encrypted with RC4 encryption
+
 • the sending of “files” which will be encrypted in blocks with AES-CBC ( You can choose which block mode and the key length )
 
 The specificity of the Signal protocol, which is implemented, is that each message is encrypted with
@@ -32,19 +34,31 @@ quite simple and relies on a chain of “Key-Derivation Functions” (KDF).
 ## Notes:
 
 •The key length used in X3DH is 2048 bit ( You can change it by changing the primary number length "p" )
+
 •The communication is established by the server that stores the public keys and the encrypted data verified by the EL GAMAL signature
+
 •Don't forget to create the csv files in the same directory of the code
+
 •KDF used is HMAC256 ( same as Signals )
 
 ## Key words:
+
 • eXtended 3 Diffie-Hellman
+
 •AES encryption
+
 •RC4 encryption
+
 •Double ratchet
+
 •El GAMAL signature
+
 •Forward secrecy
+
 •HMAC 256
+
 •Message service
+
 •Cryptology
 
 ## References:
