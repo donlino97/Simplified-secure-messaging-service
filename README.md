@@ -15,7 +15,7 @@ In order to compensate for the use of a server and to ensure that its compromise
 user messages, two essential mechanisms are implemented: the X3DH (eXtended Triple
 Diffie-Hellman) and encryption providing “forward secrecy”.
 
-##How it works?
+## How it works?
 Key initialization relies primarily on the X3DH ( Asynchronous Key Exchange: eXtended 3 Diffie-Hellman )
 Once the communications initialization phase has been completed, Alice and Bob share a key
 SK which can be used to exchange messages.
@@ -29,14 +29,14 @@ The concept of “forward secrecy” is to ensure the continuity of security eve
 is compromised. For this, the principle of implementing keys that "ratchet" is
 quite simple and relies on a chain of “Key-Derivation Functions” (KDF).
 
-##Notes:
+## Notes:
 
 •The key length used in X3DH is 2048 bit ( You can change it by changing the primary number length "p" )
 •The communication is established by the server that stores the public keys and the encrypted data verified by the EL GAMAL signature
 •Don't forget to create the csv files in the same directory of the code
 •KDF used is HMAC256 ( same as Signals )
 
-##Key words:
+## Key words:
 • eXtended 3 Diffie-Hellman
 •AES encryption
 •RC4 encryption
@@ -47,7 +47,7 @@ quite simple and relies on a chain of “Key-Derivation Functions” (KDF).
 •Message service
 •Cryptology
 
-##References:
+## References:
 1) H-KDF logic : https://fr.wikipedia.org/wiki/HMAC
 2) Double Ratchet logic : https://nfil.dev/coding/encryption/python/double-ratchet-example/
 3) AES, dans Github : https://github.com/octopius/slowaes
