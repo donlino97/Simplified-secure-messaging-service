@@ -41,7 +41,7 @@ quite simple and relies on a chain of “Key-Derivation Functions” (KDF).
 
 •KDF used is HMAC256 ( same as Signals )
 
-•Donwload the projet.zip to test and use the message service
+•Donwload the projet.zip to test and use the message service : it contains the source code with prepared csv files in a single folder
 
 ## Key words:
 
