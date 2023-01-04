@@ -37,9 +37,11 @@ quite simple and relies on a chain of “Key-Derivation Functions” (KDF).
 
 •The communication is established by the server that stores the public keys and the encrypted data verified by the EL GAMAL signature
 
-•Don't forget to create the csv files in the same directory of the code
+•Don't forget to create the csv files in the same directory of the code if you doanloaded only the source code
 
 •KDF used is HMAC256 ( same as Signals )
+
+•Donwload the projet.zip to test and use the message service
 
 ## Key words:
 
